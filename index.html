@@ -6,26 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
-    <link rel="stylesheet" href="./css/style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
 
         <a href="./index.html" class="logo "> <span class="logo-accent"> Web</span>Studio</a>
         <nav>
-            <ul class="header-list list">
-                <li><a href="" class="header-list-link link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-list-link link">Портфолио</a></li>
-                <li><a href="" class="header-list-link link">Контакты</a></li>
+
+            <ul class="site-nav list">
+                <li class="header-list"><a href="" class="header-list-link link current">Студия</a></li>
+                <li class="header-list"><a href="./portfolio.html" class="header-list-link link">Портфолио</a></li>
+                <li class="header-list"><a href="" class="header-list-link link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="header-link  list">
-            <li><a href="mailto:info@devstudio.com" class="header-tel-link link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="header-tel-link  link">+38 096 111 11 11</a></li>
+            <li class="mail-tel"><a href="mailto:info@devstudio.com" class="header-tel-link link">info@devstudio.com</a>
+            </li>
+            <li class="mail-tel"><a href="tel:+380961111111" class="header-tel-link  link">+38 096 111 11 11</a></li>
 
         </ul>
     </header>
@@ -68,8 +75,8 @@
 
         <!-- О нашей работе -->
         <section class="work">
-            <h2 class="work-list ">Чем мы занимаемся</h2>
-            <ul class="list">
+            <h2 class="work-title ">Чем мы занимаемся</h2>
+            <ul class=" list">
                 <li>
                     <img src="./images/work-time.jpg" alt="Процес работы разработчика" width="370" height="294" />
                 </li>
