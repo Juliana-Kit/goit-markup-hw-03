@@ -35,29 +35,45 @@ body {
 }
 
 .btn {
+  min-width: 73px;
+
+  padding: 6px 22px;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 1px solid transparent;
   cursor: pointer;
+
+  display: block;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: tomato;
+  /* background-color: red; */
 }
 /* Logo */
-
-.header.container {
-  display: flex;
-  align-items: center;
+.header {
+  /* background-color: tomato; */
+  border: 1px solid #ececec;
 }
 
-.header > .logo {
+.header-container {
+  display: flex;
+  align-items: center;
+  /* background-color: tomato; */
+}
+
+.header .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -84,10 +100,9 @@ img {
   align-items: center;
 }
 
-.header-list,
-.mail-tel {
-  padding-top: 32px;
-  padding-bottom: 32px;
+.site-nav-list {
+  display: flex;
+  align-items: center;
 }
 
 .header-list:not(:last-child) {
@@ -99,6 +114,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
+
+  padding: 32px 0;
 }
 
 .header-list-link:hover,
@@ -124,6 +141,8 @@ img {
   font-weight: 500;
   line-height: 1.14;
   color: var(--primary-text-color);
+
+  padding: 32px 0;
 }
 
 .header-tel-link:hover,
@@ -135,15 +154,23 @@ img {
 
 .hero {
   background-color: #2f303a;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero > .hero-tittle {
+.hero .hero-tittle {
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 
   color: #ffffff;
 }
@@ -156,35 +183,97 @@ img {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+
+  margin: 0 auto;
 }
 
 /*  Mainly  */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-mainly {
+  padding-bottom: 0;
+}
+
+.section-mainly .mainly {
+  display: flex;
+
+  /* outline: 1px solid tomato; */
+
+  margin-right: -30px;
+}
+
+.mainly-list {
+  margin-right: 30px;
+
+  flex-basis: calc((100% / 4) - 30px);
+}
 
 .mainly-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   color: var(--primary-title-color);
+
+  margin-bottom: 10px;
 }
 
 .mainly-text {
-  line-height: 17.1;
+  line-height: 1.71;
 
   color: var(--primary-text-color);
 }
 
 /* Company */
-.work-title,
+.work-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--primary-title-color);
+
+  margin-bottom: 50px;
+}
+
+.main-work-list {
+  display: flex;
+
+  margin-right: -30px;
+  /* outline: 1px solid tomato; */
+}
+
+.work-list {
+  margin-right: 30px;
+  flex-basis: calc((100% / 3) - 30px);
+}
+
 .company-primary-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
   text-align: center;
   color: var(--primary-title-color);
+
+  margin-bottom: 50px;
+  flex: wrap;
 }
 
-.work-list {
-  display: block;
+.company-primary-list {
+  display: flex;
+
+  margin-right: -30px;
+  /* outline: 1px solid #2196f3; */
+}
+
+.company-list {
+  margin-right: 30px;
+  flex-basis: calc((100% / 4) - 30px);
+  /* outline: 1px solid turquoise; */
+}
+
+.thumb {
+  margin-bottom: 30px;
 }
 
 .company-title {
@@ -193,6 +282,8 @@ img {
   text-align: center;
   line-height: 1.2;
   color: var(--primary-title-color);
+
+  margin-bottom: 10px;
 }
 
 .trade {
@@ -200,6 +291,8 @@ img {
   text-align: center;
   line-height: 1.2;
   color: var(--primary-text-color);
+
+  padding-bottom: 30px;
 }
 
 /* Footer */
@@ -207,6 +300,7 @@ img {
 .page-footer {
   background-color: #2f303a;
 }
+
 a.logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -214,6 +308,7 @@ a.logo-footer {
   line-height: 31px;
 
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .logo-footer:hover,
@@ -245,7 +340,12 @@ a.logo-footer {
 }
 
 /* PORTFOLIO */
+.menu-btn {
+  display: flex;
+  justify-content: center;
 
+  margin-top: 95px;
+}
 .menu .btn {
   font-family: inherit;
   font-weight: 500;
@@ -263,6 +363,9 @@ a.logo-footer {
   background-color: var(--accent-color);
 }
 
+.btn-list:not(:last-child) {
+  margin-right: 8px;
+}
 .menu-link .menu-title {
   font-weight: 700;
   font-size: 18px;
