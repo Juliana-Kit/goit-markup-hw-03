@@ -269,10 +269,12 @@ img {
 .company-list {
   margin-right: 30px;
   flex-basis: calc((100% / 4) - 30px);
-  /* outline: 1px solid turquoise; */
+  outline: 1px solid turquoise;
+
+  border-radius: 0px 0px 4px 4px;
 }
 
-.thumb {
+.thumb-company {
   margin-bottom: 30px;
 }
 
@@ -308,6 +310,9 @@ a.logo-footer {
   line-height: 31px;
 
   color: #ffffff;
+
+  display: block;
+  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -319,6 +324,12 @@ a.logo-footer {
 .footer-address {
   font-style: inherit;
   line-height: 1.71;
+
+  padding-bottom: 60px;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -340,11 +351,11 @@ a.logo-footer {
 }
 
 /* PORTFOLIO */
+
 .menu-btn {
   display: flex;
   justify-content: center;
-
-  margin-top: 95px;
+  margin-bottom: 50px;
 }
 .menu .btn {
   font-family: inherit;
@@ -366,6 +377,16 @@ a.logo-footer {
 .btn-list:not(:last-child) {
   margin-right: 8px;
 }
+
+.card-menu {
+  display: flex;
+  flex-basis: calc(100% / 3 - 20);
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
 .menu-link .menu-title {
   font-weight: 700;
   font-size: 18px;
@@ -373,6 +394,8 @@ a.logo-footer {
   letter-spacing: 0.06em;
 
   color: var(--primary-title-color);
+
+  margin-bottom: 4px;
 }
 
 .menu-text {
