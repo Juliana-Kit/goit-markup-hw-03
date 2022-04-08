@@ -208,9 +208,9 @@ img {
 }
 
 .mainly-list {
-  flex-basis: calc((100% / 4) - 30px);
-  min-width: 270px;
-  flex-wrap: wrap;
+  flex-basis: calc((100% - 90px) / 4);
+  max-width: 270px;
+  
 }
 
 .mainly-title {
@@ -228,7 +228,7 @@ img {
   color: var(--primary-text-color);
 }
 
-/* Company */
+/* Work images */
 .section.work {
   padding-top: 0;
 }
@@ -251,15 +251,11 @@ img {
   display: flex;
   /* outline: 1px solid tomato; */
   flex-wrap: wrap;
-
-  /* margin-left: -30px; */
 }
 
-.work-list {
-  flex-basis: calc((100% / 3) - 30px);
-  /* margin-left: 30px; */
-}
 
+
+/* Company */
 .company-primary-title {
   font-weight: 700;
   font-size: 36px;
@@ -273,7 +269,7 @@ img {
 
 .company-primary-list {
   display: flex;
-
+  flex-wrap: wrap;
   /* outline: 1px solid #2196f3; */
 }
 
@@ -282,8 +278,9 @@ img {
 }
 
 .company-list {
-  flex-basis: calc((100% / 4) - 30px);
+  /* flex-basis: calc((100% - 90px) / 4); */
   border-radius: 0px 0px 4px 4px;
+  outline: 1px solid #2196f3;
 }
 
 .thumb-company {
@@ -313,9 +310,6 @@ img {
 
 .page-footer {
   background-color: #2f303a;
-}
-
-.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -395,17 +389,15 @@ a.logo-footer {
 .menu-link {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
-.card-menu {
+.card-menu{
   display: flex;
-  flex-basis: calc(100% / 3 - 20);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  /* flex-basis: calc((100% - 90px) / 3);  */
+  margin: 15px;
   /* outline: 1px solid teal; */
-}
+} 
 
 .card-content {
   padding: 20px 24px;
